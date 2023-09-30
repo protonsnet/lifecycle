@@ -8,6 +8,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.activity.viewModels
 import androidx.navigation.ui.setupActionBarWithNavController
 import net.psistemas.livecycle.databinding.ActivityMainBinding
+import net.psistemas.livecycle.viewmodel.MainViewModel
 
 class MainActivity : AppCompatActivity() {
 

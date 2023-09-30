@@ -1,4 +1,4 @@
-package net.psistemas.livecycle
+package net.psistemas.livecycle.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

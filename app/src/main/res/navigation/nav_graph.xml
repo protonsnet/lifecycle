@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="net.psistemas.livecycle.FirstFragment"
+        android:name="net.psistemas.livecycle.viewmodel.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="net.psistemas.livecycle.SecondFragment"
+        android:name="net.psistemas.livecycle.viewmodel.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 

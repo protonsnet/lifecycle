@@ -1,4 +1,4 @@
-package net.psistemas.livecycle
+package net.psistemas.livecycle.viewmodel
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import net.psistemas.livecycle.R
 import net.psistemas.livecycle.databinding.FragmentFirstBinding
 
 /**
