@@ -6,6 +6,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.activity.viewModels
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.ui.setupActionBarWithNavController
 import net.psistemas.livecycle.databinding.ActivityMainBinding
 import net.psistemas.livecycle.viewmodel.MainViewModel
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
-            //viewModel.increment()
+            viewModel.increment()
         }
     }
 
