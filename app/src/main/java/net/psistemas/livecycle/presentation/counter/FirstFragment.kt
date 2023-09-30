@@ -1,4 +1,4 @@
-package net.psistemas.livecycle.viewmodel
+package net.psistemas.livecycle.presentation.counter
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import net.psistemas.livecycle.R
+import net.psistemas.livecycle.ViewModelFactory
 import net.psistemas.livecycle.databinding.FragmentFirstBinding
 
 /**
@@ -21,7 +22,9 @@ class FirstFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
-    private val viewModel by activityViewModels<MainViewModel> ()
+    private val viewModel by activityViewModels<MainViewModel> {
+        ViewModelFactory()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

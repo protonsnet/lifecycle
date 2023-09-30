@@ -1,4 +1,4 @@
-package net.psistemas.livecycle.streaming
+package net.psistemas.livecycle.presentation.streaming
 
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner

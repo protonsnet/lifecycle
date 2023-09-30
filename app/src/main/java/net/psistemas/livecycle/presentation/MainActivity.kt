@@ -1,4 +1,4 @@
-package net.psistemas.livecycle
+package net.psistemas.livecycle.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,17 +6,20 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.activity.viewModels
-import androidx.fragment.app.activityViewModels
 import androidx.navigation.ui.setupActionBarWithNavController
+import net.psistemas.livecycle.R
+import net.psistemas.livecycle.ViewModelFactory
 import net.psistemas.livecycle.databinding.ActivityMainBinding
-import net.psistemas.livecycle.viewmodel.MainViewModel
+import net.psistemas.livecycle.presentation.counter.MainViewModel
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
-    private val viewModel by viewModels<MainViewModel>()
+    private val viewModel by viewModels<MainViewModel>{
+        ViewModelFactory()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

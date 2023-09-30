@@ -1,4 +1,4 @@
-package net.psistemas.livecycle.streaming
+package net.psistemas.livecycle.presentation.streaming
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
